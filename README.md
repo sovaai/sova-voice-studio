@@ -41,13 +41,13 @@ $ cd sova-voice-studio
 
 *   (Optional) If you're going to use the service to update the language model for SOVA ASR - put your `.arpa` file to `Data/` folder and set the correct path to it in `config.ini` (or download an existing [Vosk](https://alphacephei.com/vosk/models) Russian ARPA model):
 ```bash
-$ wget http://dataset.sova.ai/SOVA-ASR/vosk.arpa.tar.gz
-$ mkdir -p Data/ && tar -xvzf vosk.arpa.tar.gz -C Data/ && rm vosk.arpa.tar.gz
+$ wget http://dataset.sova.ai/SOVA-ASR/vosk.tar.gz
+$ mkdir -p Data/ && tar -xvzf vosk.tar.gz -C Data/ && rm vosk.tar.gz
 ```
 You can also get a small language model for testing purposes:
 ```bash
-$ wget http://dataset.sova.ai/SOVA-ASR/vosk-small.arpa.tar.gz
-$ mkdir -p Data/ && tar -xvzf vosk-small.arpa.tar.gz -C Data/ && rm vosk-small.arpa.tar.gz
+$ wget http://dataset.sova.ai/SOVA-ASR/vosk-small.tar.gz
+$ mkdir -p Data/ && tar -xvzf vosk-small.tar.gz -C Data/ && rm vosk-small.tar.gz
 ```
 
 *   (Optional) If you're going to use the service to update SOVA TTS pronunciation dictionaries - make sure you provide the correct SOVA TTS URL in the `.env` file in this repository. If you have deployed SOVA Voice Studio on the same server SOVA TTS is located and SOVA TTS is running on port 8899 - you can keep the `http://localhost:8899/` URL.
