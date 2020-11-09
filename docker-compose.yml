@@ -1,0 +1,24 @@
+version: '3.5'
+
+services:
+  sova-voice-studio-lm:
+    restart: always
+    container_name: sova-voice-studio-lm
+    build:
+      context: .
+      dockerfile: docker/lm/Dockerfile
+    image: sova/voice-studio-lm:0.1
+    volumes:
+      - .:/sova-voice-studio-lm
+    ports:
+      - 5000:5000
+
+  sova-voice-studio:
+    restart: always
+    container_name: sova-voice-studio
+    build:
+      context: .
+      dockerfile: docker/ui/Dockerfile
+    image: sova/voice-studio:0.1
+    ports:
+      - 8000:5000

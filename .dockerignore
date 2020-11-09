@@ -1,0 +1,17 @@
+node_modules
+npm-debug.log
+Dockerfile
+.dockerignore
+.git
+.gitignore
+.vscode
+tests
+.prettierrc
+.template.env
+CHANGELOG.md
+README.md
+build
+Data
+__pycache__
+.idea
+.DS_Store

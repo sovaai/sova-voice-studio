@@ -1,0 +1,26 @@
+.dashboard__asr_item,
+.dashboard__tts_item {
+  height: 50%;
+}
+
+.dashboard__tts-background {
+  width: 30%;
+}
+
+.dashboard__asr-background {
+  /*   width: 15%; */
+}
+
+.dashboard__tts-text,
+.dashboard__asr-text {
+  font-size: 192px;
+  font-weight: bold;
+}
+
+.dashboard__tts-text {
+  color: #cecece;
+}
+
+.dashboard__asr-text {
+  color: #fc2d81;
+}

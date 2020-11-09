@@ -1,0 +1,14 @@
+.ScrollbarsCustom-TrackY {
+  width: 5px !important;
+  right: -83px !important;
+  background-color: transparent !important;
+  /*   opacity: 0.5 !important; */
+}
+
+.ScrollbarsCustom-ThumbY {
+  background-color: #ffeb3b !important;
+}
+
+.asr-page .ScrollbarsCustom-TrackY {
+  right: -163px !important;
+}

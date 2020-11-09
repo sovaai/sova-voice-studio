@@ -1,0 +1,72 @@
+.frequency__input,
+.frequency {
+  transition: opacity ease-in-out 0.1s;
+}
+
+.frequency__input {
+  @apply opacity-50;
+}
+
+.frequency {
+  @apply opacity-0;
+  min-width: 2rem;
+}
+
+.asr-item:hover .frequency,
+.asr-item:hover .frequency__input {
+  @apply opacity-100;
+}
+
+.button {
+  min-width: 9rem;
+  padding: 1rem;
+  margin-top: auto;
+  margin-bottom: 1rem;
+  background-color: #386ffe;
+  color: #ffffff;
+  border-radius: 2.25rem;
+  outline: none;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.asr-page {
+  background-color: transparent;
+  padding-top: 3rem;
+}
+
+.asr-btn_update {
+  bottom: 1rem;
+  right: 15px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  background-color: #dde7ff;
+  color: #386ffe;
+  padding-left: 2rem;
+
+  & > svg {
+    margin-left: 1rem;
+  }
+}
+
+.notification {
+  min-height: 2rem;
+  margin-bottom: 1rem;
+}
+
+.Dropdown-root {
+  top: -1px;
+}
+
+.Dropdown-placeholder {
+  @apply p-2;
+  border: 1px solid;
+}
+
+.Dropdown-option {
+  @apply p-2;
+  border: 1px solid;
+  border-top: none;
+}

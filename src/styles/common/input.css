@@ -1,0 +1,73 @@
+input[type='range'] {
+  margin: auto;
+  -webkit-appearance: none;
+  position: relative;
+  overflow: hidden;
+  height: 1rem;
+  width: 200px;
+  cursor: pointer;
+  border-radius: 3px; /* iOS */
+  outline: none;
+}
+
+::-webkit-slider-runnable-track {
+  background: #ebebeb;
+}
+
+/*
+ * 1. Set to 0 width and remove border for a slider without a thumb
+ */
+::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 1px; /* 1 */
+  height: 1rem;
+  background: #307fe2;
+  box-shadow: -100vw 0 0 100vw #307fe2;
+  /*   border: 2px solid #999; */ /* 1 */
+}
+
+::-moz-range-track {
+  height: 1rem;
+  background: #ebebeb;
+}
+
+::-moz-range-thumb {
+  background: #fff;
+  height: 1rem;
+  width: 1px;
+  /*   border: 3px solid #999; */
+  /*   border-radius: 0 !important; */
+  box-shadow: -100vw 0 0 100vw #307fe2;
+  box-sizing: border-box;
+}
+
+::-ms-fill-lower {
+  background: #307fe2;
+}
+
+::-ms-thumb {
+  background: #fff;
+  border: 2px solid #999;
+  height: 1rem;
+  width: 1px;
+  box-sizing: border-box;
+}
+
+::-ms-ticks-after {
+  display: none;
+}
+
+::-ms-ticks-before {
+  display: none;
+}
+
+::-ms-track {
+  background: #ebebeb;
+  color: transparent;
+  height: 1rem;
+  border: none;
+}
+
+::-ms-tooltip {
+  display: none;
+}

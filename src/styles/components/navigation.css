@@ -1,0 +1,18 @@
+.navigation {
+  background-color: #0f1f48;
+  color: #ffffff;
+  padding: 1rem;
+  padding-left: 10rem;
+}
+
+.navigation__dashboard-true {
+  background-color: #ffffff;
+}
+
+.page-navigation {
+  background-color: #386ffe;
+}
+
+.menu {
+  left: 3rem;
+}
