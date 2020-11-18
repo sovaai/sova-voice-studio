@@ -1,6 +1,6 @@
 # SOVA Voice Studio
 
-This service is designed to update [SOVA ASR](https://github.com/sovaai/sova-asr) language models and [SOVA TTS](https://github.com/sovaai/sova-tts) pronunciation dictionaries. SOVA ASR language models are compiled [KenLM](https://github.com/kpu/kenlm) binaries of [ARPA](https://cmusphinx.github.io/wiki/arpaformat/) language models. ARPA language models are created using large text corpora and to get a decent model you have to collect, keep and update a lot of data. SOVA Voice Studio provides a solution to edit existing ARPA language models manually without an initial text corpus by adding new words or sentences to the model via web interface. The approximate frequency of occurance for each word or sentence is provided by the end user. This toolkit is handy in case you don't have the initial text corpora. SOVA TTS pronunciation dictionaries is a new feature that is used to customize the pronunciation of abbreviations, correct word stress for standalone words and short phrases, etc. SOVA Voice Studio can be used as a service to edit such dictionaries with ease and deploy them instantly to SOVA TTS.
+Voice Studio is designed to update [SOVA ASR](https://github.com/sovaai/sova-asr) language models and [SOVA TTS](https://github.com/sovaai/sova-tts) pronunciation dictionaries. SOVA ASR language models are compiled [KenLM](https://github.com/kpu/kenlm) binaries of [ARPA](https://cmusphinx.github.io/wiki/arpaformat/) language models. ARPA language models are created using large text corpora and to get a decent model you have to collect, keep and update a lot of data. SOVA Voice Studio provides a solution to edit existing ARPA language models manually without an initial text corpus by adding new words or sentences to the model via web interface. The approximate frequency of occurance for each word or sentence is provided by the end user. This toolkit is handy in case you don't have the initial text corpora. SOVA TTS pronunciation dictionaries is a new feature that is used to customize the pronunciation of abbreviations, correct word stress for standalone words and short phrases, etc. SOVA Voice Studio can be used as a service to edit such dictionaries with ease and deploy them instantly to SOVA TTS.
 
 ## Installation
 
@@ -69,3 +69,7 @@ $ sudo docker-compose up -d
 *   Go to http://localhost:8000. You can choose whether you want to edit a SOVA ASR language model or a SOVA TTS pronunciation dictionary. Choose the model to update, add words or phrases and click the update button.
 
 *   In order to use the updated model with SOVA ASR you have to put the generated language model `.klm` and lexicon `.txt` files to the corresponding SOVA ASR Data directory and choose those files in SOVA ASR `config.ini` and then restart the service. SOVA TTS is updated instantly.
+
+# Licenses
+
+SOVA Voice Studio is licensed under Apache License 2.0 by Virtual Assistant, LLC.
