@@ -134,7 +134,7 @@ class ModelHandler:
                 elif prob == 0:
                     prob += 1e-7
                 # Temporary using these formulae
-                scaled_prob = 10 ** (-(6 - 2 * i)) * prob ** 2
+                scaled_prob = 10 ** (-(4 - 2 * i)) * prob ** 2
                 if i == n:
                     insertion = "{:.6f}\t{}\n".format(math.log10(scaled_prob), igram)
                     model.insert(insert_index, insertion)
